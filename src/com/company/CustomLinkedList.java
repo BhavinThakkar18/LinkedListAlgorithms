@@ -54,9 +54,21 @@ public class CustomLinkedList {
         Node fast= head.next;
         Node prev= null;
         int iteration=sizeOfList()-k;
+        if(sizeOfList()==0 ||sizeOfList()==1)
+        {
+            head=null;
+        }
         if(iteration<0)
         {
             System.out.println("Invalid Choice of K= "+iteration+" which is <0");
+            return;
+        }
+        else if(iteration==0)
+        {
+
+            head=fast;
+            slow.next=null;
+
             return;
         }
         while((iteration-1)!=0)

@@ -43,7 +43,11 @@ public class Main {
         linkedList.displayContent();
         linkedList.deleteKthElement(2);
         linkedList.displayContent();
-        linkedList.deleteKthElement(4);
+        linkedList.deleteKthElement(3);
+        linkedList.displayContent();
+        linkedList.deleteKthElement(2);
+        linkedList.displayContent();
+        linkedList.deleteKthElement(1);
         linkedList.displayContent();
     }
 }
