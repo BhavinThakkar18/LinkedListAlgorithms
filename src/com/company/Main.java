@@ -27,13 +27,17 @@ public class Main {
         Node secondNode = new Node(4);
         Node thirdNode = new Node(5);
         Node fourhNode = new Node(6);
+        Node fifthNode= new Node(7);
 
         linkedList.head = firstNode;
         firstNode.next= secondNode;
         secondNode.next=thirdNode;
         thirdNode.next=fourhNode;
-        linkedList.displayContent();
+        fourhNode.next=fifthNode;
 
+        linkedList.displayContent();
+        linkedList.deleteBackHalf();
+        linkedList.displayContent();
 
 
     }
