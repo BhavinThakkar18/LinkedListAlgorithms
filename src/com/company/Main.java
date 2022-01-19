@@ -35,10 +35,15 @@ public class Main {
         thirdNode.next=fourhNode;
         fourhNode.next=fifthNode;
 
+//        linkedList.displayContent();
+//        linkedList.deleteBackHalf();
         linkedList.displayContent();
-        linkedList.deleteBackHalf();
+        System.out.println(linkedList.sizeOfList());
+        linkedList.deleteKthElement(1);
         linkedList.displayContent();
-
-
+        linkedList.deleteKthElement(2);
+        linkedList.displayContent();
+        linkedList.deleteKthElement(4);
+        linkedList.displayContent();
     }
 }
